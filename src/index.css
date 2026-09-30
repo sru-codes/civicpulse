@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-serif: "Newsreader", Georgia, serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+    --color-bg: #fafaf8;
+    --color-surface: #ffffff;
+    --color-surface-secondary: #f4f4f1;
+    --color-surface-elevated: #ffffff;
+    --color-text-primary: #1c1e21;
+    --color-text-secondary: #55595f;
+    --color-text-muted: #7e848d;
+    --color-border: #e5e5e0;
+    --color-border-strong: #d0d1ca;
+    --color-accent: #0f5c5c;
+    --color-accent-hover: #0a4545;
+    --color-accent-subtle: #eef5f5;
+    --color-accent-contrast: #ffffff;
+    --color-ring: #0f5c5c;
+    --color-success: #236b43;
+    --color-success-bg: #ebf5ee;
+    --color-success-border: #c8e6d3;
+    --color-success-text: #184d30;
+    --color-warning: #8f590a;
+    --color-warning-bg: #fdf6ea;
+    --color-warning-border: #f7dfb8;
+    --color-warning-text: #663f05;
+    --color-danger: #9e2a2b;
+    --color-danger-bg: #fdf0f0;
+    --color-danger-border: #f7c6c7;
+    --color-danger-text: #731c1d;
+    --color-info: #205493;
+    --color-info-bg: #eef4fa;
+    --color-info-border: #caddf3;
+    --color-info-text: #143966;
+    --radius-xs: 4px;
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 10px;
+    --radius-xl: 12px;
+  }
+
+  .dark {
+    --color-bg: #141517;
+    --color-surface: #1b1d1f;
+    --color-surface-secondary: #232629;
+    --color-surface-elevated: #2c2f33;
+    --color-text-primary: #f3f3ef;
+    --color-text-secondary: #a6aaae;
+    --color-text-muted: #75797d;
+    --color-border: #2e3236;
+    --color-border-strong: #3e4247;
+    --color-accent: #257c7c;
+    --color-accent-hover: #2e9494;
+    --color-accent-subtle: #132b2b;
+    --color-accent-contrast: #ffffff;
+    --color-ring: #257c7c;
+    --color-success: #3bb16e;
+    --color-success-bg: #12291c;
+    --color-success-border: #1d472f;
+    --color-success-text: #7de4a9;
+    --color-warning: #d89e3a;
+    --color-warning-bg: #2d210b;
+    --color-warning-border: #4d3812;
+    --color-warning-text: #f7d28b;
+    --color-danger: #d65557;
+    --color-danger-bg: #301314;
+    --color-danger-border: #522022;
+    --color-danger-text: #f49e9f;
+    --color-info: #5b94d9;
+    --color-info-bg: #102237;
+    --color-info-border: #1c3c63;
+    --color-info-text: #a4c6f0;
+  }
+
+  .high-contrast {
+    --color-bg: #000000;
+    --color-surface: #0a0a0a;
+    --color-surface-secondary: #171717;
+    --color-surface-elevated: #262626;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e5e5e5;
+    --color-text-muted: #a3a3a3;
+    --color-border: #525252;
+    --color-border-strong: #a3a3a3;
+    --color-accent: #22d3ee;
+    --color-accent-hover: #67e8f9;
+    --color-accent-subtle: #083344;
+    --color-accent-contrast: #000000;
+    --color-ring: #22d3ee;
+    --color-success: #4ade80;
+    --color-success-bg: #052e16;
+    --color-success-border: #22c55e;
+    --color-success-text: #86efac;
+    --color-warning: #facc15;
+    --color-warning-bg: #422006;
+    --color-warning-border: #eab308;
+    --color-warning-text: #fef08a;
+    --color-danger: #f87171;
+    --color-danger-bg: #450a0a;
+    --color-danger-border: #ef4444;
+    --color-danger-text: #fca5a5;
+    --color-info: #60a5fa;
+    --color-info-bg: #172554;
+    --color-info-border: #3b82f6;
+    --color-info-text: #93c5fd;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 150, 160, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 150, 160, 0.45);
+}
